@@ -2,12 +2,12 @@ import boto
 from boto.s3.key import Key
 import os
 # login credentials
-AWS_ACCESS_KEY_ID = 'AKIAJOQJ4ENDXJNL73PA'
-AWS_SECRET_ACCESS_KEY = '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'
+AWS_ACCESS_KEY_ID = '*************'
+AWS_SECRET_ACCESS_KEY = '***********************'
 # connection to S3
 conn = boto.connect_s3(AWS_ACCESS_KEY_ID,AWS_SECRET_ACCESS_KEY)
 # Locating the bucket
-mybucket = conn.get_bucket('vmn-data-strategy')## Our bucket name
+mybucket = conn.get_bucket('*************')## Our bucket name
 
 # adding the files in the folder to s3 bucket
 for root, dirs, files in os.walk('C:\\Users\\singhsi\\Desktop\\Pixability'):# change this to your source address
